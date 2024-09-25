@@ -83,7 +83,7 @@
     {#if value?.[1]?.url}
         <div class="icon-buttons">
                 {#if show_download_button}
-                    <DownloadLink href={value[1].url} download={value[1].orig_name || "image"}>
+                    <DownloadLink href={value[0].url} download={value[0].orig_name || "image"}>
                         <IconButton Icon={Download} />
                     </DownloadLink>
                 {/if}
